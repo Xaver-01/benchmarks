@@ -1,0 +1,8 @@
+median runtime over 10 advection steps
+sticking = 0.1
+grid delta = 0.1
+Fixed number of rays = 140.000.000
+MAKE_GEO Hole from BenchmarkGeometry.hpp
+
+Varying Nr. of Elements:
+GRID_DELTA range: [0.1, 0.12, 0.15, 0.2, 0.3]

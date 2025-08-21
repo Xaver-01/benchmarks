@@ -6,3 +6,12 @@ MAKE_GEO Hole from BenchmarkGeometry.hpp
 
 Varying Nr. of Elements:
 GRID_DELTA range: [0.1, 0.12, 0.15, 0.2, 0.3]
+
+
+
+
+
+- Disks:
+  - GPU neighbor detection 4.2s
+  - CPU like neighbor detection bit slower  (4.3s)
+  - CPU equivalent a lot faster (3.6s, reporting actual t value probably allows optix to optimize search pattern)

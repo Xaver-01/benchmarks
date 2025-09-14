@@ -12,6 +12,14 @@ GRID_DELTA range: [0.1, 0.12, 0.15, 0.2, 0.3]
 
 
 - Disks:
-  - GPU neighbor detection 4.2s
-  - CPU like neighbor detection bit slower  (4.3s)
-  - CPU equivalent a lot faster (3.6s, reporting actual t value probably allows optix to optimize search pattern)
+  - initial complicated neighbor detection ~5.5s
+  - 2 step neighbor detection: register all and filter by t value later (with large tThreshold 4.2s)
+  - CPU like neighbor detection (register all and filter by distance) bit slower (4.3s)
+  - CPU equivalent report actual t value and check neighbors explicitly (3.6s, reporting actual t value probably allows optix to optimize search pattern)
+  - 2 step detection with tThreshold ~gridDelta ~3.7s
+  - tighter AABB boxes leads to ~2.3s
+
+  - gpu neighbor detection is fastest, followed by cpu-like, cpu-equivalent is slowest
+
+- LevelSet:
+  - no idea how it got so fast, i just replaced float3 with Vec3Df and did some other cleanup

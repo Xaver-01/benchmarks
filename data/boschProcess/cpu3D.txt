@@ -1,7 +1,6 @@
-1 cycle:
-depo:         17.848588 s
-punchThrough: 67.533246 s
-etching:      933s
-total:        1018s
-
-estimated 10 cycles: 10180s = 170min
+Total simulation time: 18322.8s
+Trace Calls:
+  Etch: 347
+  Punch through: 70
+  Deposit: 90
+  Total: 507

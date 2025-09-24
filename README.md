@@ -84,12 +84,11 @@
 
 | Method | Time   | Trace Calls | Time / Trace Call | Speedup vs CPU |
 |--------|--------|-------------|-------------------|----------------|
-| CPU    | 270min*| 523*        | 30.98s             | –              |
-| Disks  | 372s   | 512         | 0.72656s           | 43.55×         |
-| Lvl    | 592s   | 466         | 1.27039s           | 27.36×         |
-| Trig   | 318s   | 531         | 0.59887s           | 50.94×         |
+| CPU    | 305min | 507         | 36.13             | –              |
+| Disks  | 372s   | 512         | 0.72656           | 49.25×         |
+| Lvl    | 592s   | 466         | 1.27039           | 30.95×         |
+| Trig   | 318s   | 531         | 0.59887           | 57.61×         |
 
-*estimated based on 7/10 cycles.
 - Again the LeveSet method produces very different final surfaces than the CPU reference.
 - This example highlights the similar behavior from Lines and Triangles where both methods etch slightly more into the sidewalls compared to CPU/GPU Disks.
 - Also the effect of Rays/Surface Element gets clear as the Triangles are not 2.5x faster than the Disks as the first benchmark might have suggested.

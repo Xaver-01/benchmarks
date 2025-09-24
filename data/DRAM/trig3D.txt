@@ -1,0 +1,29 @@
+Process HBrO2Etching took: 31.793464 s 
+    Surface advection total time: 1.391697 s
+    Percent of total time: 4.377304
+    Flux calculation total time: 26.450377 s
+    Percent of total time: 83.194386
+Number of trace calls: 30
+
+Process HBrO2Etching took: 39.417682 s 
+    Surface advection total time: 1.673177 s
+    Percent of total time: 4.244737
+    Flux calculation total time: 36.747102 s
+    Percent of total time: 93.224919
+Number of trace calls: 59
+
+----- each run is 2 iterations
+
+Process HBrO2Etching took: 30.977868 s 
+    Surface advection total time: 1.415348 s
+    Percent of total time: 4.568899
+    Flux calculation total time: 25.620607 s
+    Percent of total time: 82.706165
+Number of trace calls: 29
+
+Process HBrO2Etching took: 39.368928 s 
+    Surface advection total time: 1.636651 s
+    Percent of total time: 4.157215
+    Flux calculation total time: 36.714553 s
+    Percent of total time: 93.257689
+Number of trace calls: 58

@@ -1,0 +1,4 @@
+Disks:
+  - disks3D_DRAM_cpuEquivalent*.vtp uses the slower neighbor detection method where each neighbor disk is explicitly checked for an intersection
+  - disks3D_DRAM*.vtp uses the default method of searching for intersection along the ray with a given threshold
+  - Differences only occur in very specific edge cases. The results are pretty much identical.

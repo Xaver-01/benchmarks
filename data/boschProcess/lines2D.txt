@@ -1,0 +1,34 @@
+Total simulation time: 4.02598s
+Trace Calls:
+  Etch: 349
+  Punch through: 70
+  Deposit: 91
+  Total: 510
+
+  Total simulation time: 4.05433s
+Trace Calls:
+  Etch: 349
+  Punch through: 70
+  Deposit: 90
+  Total: 509
+
+Total simulation time: 4.01688s
+Trace Calls:
+  Etch: 349
+  Punch through: 70
+  Deposit: 90
+  Total: 509
+
+  Total simulation time: 4.07587s
+Trace Calls:
+  Etch: 349
+  Punch through: 70
+  Deposit: 91
+  Total: 510
+
+Total simulation time: 4.02153s
+Trace Calls:
+  Etch: 349
+  Punch through: 70
+  Deposit: 92
+  Total: 511

@@ -1,0 +1,24 @@
+median runtime over 10 advection steps
+sticking = 0.1
+grid delta = 0.1
+Fixed number of rays = 140.000.000
+Postprocess neighbor averaging with 1st order neighbors
+MAKE_GEO Hole from BenchmarkGeometry.hpp
+
+- Disks:
+  - 3 Methods of neighbor detection:
+    - (default): find all disks that are close to the closest hit given a max search distance (tThreshold ~gridDelta).
+    - CPUlike: find neighbors like default, then filter them using the distance between disks (same result as CPU while still very fast)
+    - CPUeq: Actual equivalent to CPU version: find closest hit, then explicitly check if the same ray hit any of the neighbors.
+
+  - Compare impact of neighbor detection method:
+    - disks3D: GPU neighbor detection with tThreshold and DirectCallables (default)
+    - disks2D: default in 2D
+    - CPUeq: CPU equivalent neighbor detection (slower)
+    - CPUlike: hybrid using tThreshold + distance between disks to get same result as CPUeq (almost as fast as default)
+  
+  - Compare impact of direct callables:
+    - maxSpeedInline: no neighbor detection, inlined functions
+    - maxSpeed: no neighbor detection, DirectCallables
+    - maxRaysInline: no neighbor detection, inlined, 536.9M rays
+    - maxRays: no neighbor detection, DC, 536.9M rays, seems like callable overhead is not absolute

@@ -1,0 +1,16 @@
+- All runs were done with the same config that is in this directory
+- Same as config.txt from CPU holeEtching example
+
+- List of fixes:
+  - z dimension was not initialized to zero in 2D
+  - Rays could immediately intersect the same disk twice after reflection (fixed by checking for t > ... inside IS kernel)
+  - Backface hit logic is now identical to CPU version (1 backside hit ok, 2nd -> kill ray)
+  - holeEtching: CH kernel used same materialID for closest hit and all neighbors but neighbors could be of different material
+
+holeEtching:
+- With deterministic parameters (120.981 rays, same RNG for ray generation, specular reflection, no pulls from distribution but just taking the mean value)
+simulation results match up to floating point precision (s. ..._sameRNG.vtp)
+- With random rays (everything else deterministic) results vary for both GPU and CPU in the same magnitude (s. ..._rndRays.vtp)
+- With everything random the results match perfectly with slight variations based on RNG of course
+- timestepsX.txt show the time steps for the default configuration (all random, using config.txt)
+- GPU version uses CPU equivalent detection

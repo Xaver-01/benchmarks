@@ -14,11 +14,11 @@ MAKE_GEO Hole from BenchmarkGeometry.hpp
   - Compare impact of neighbor detection method:
     - disks3D: GPU neighbor detection with tThreshold and DirectCallables (default)
     - disks2D: default in 2D
-    - CPUeq: CPU equivalent neighbor detection (slower)
-    - CPUlike: hybrid using tThreshold + distance between disks to get same result as CPUeq (almost as fast as default)
+    - CPUeq: CPU equivalent neighbor detection (6-7% slower)
+    - CPUlike: hybrid using tThreshold + distance between disks to get same result as CPUeq (1% slower, almost as fast as default)
   
   - Compare impact of direct callables:
     - maxSpeedInline: no neighbor detection, inlined functions
-    - maxSpeed: no neighbor detection, DirectCallables
+    - maxSpeed: no neighbor detection, DirectCallables (~2.5% slower)
     - maxRaysInline: no neighbor detection, inlined, 536.9M rays
     - maxRays: no neighbor detection, DC, 536.9M rays, seems like callable overhead is not absolute

@@ -42,7 +42,7 @@
 | Lvl    | 1538ms |   91.0                | 46.81x          |
 | Trig   | 746ms  |   187.7               | 96.51×          |
 
-- In 2D the Disk and Line Mesh perform very similar which was expected. The current disk implementation sacrifices 2-5% of performance for more readable and clearer code, which should bring these two even closer together.
+- In 2D the Disk and Line Mesh perform very similar which was expected. The current disk implementation sacrifices 2-3% of performance for more readable and clearer code, which should bring these two even closer together.
 - The LvlSet Method performs considerably worse in 2D, while in 3D it is faster than the disk method. Also the 3D final surface has some bumps which are likely from errors in area calculation and normalization.
 - The Ray Tracing on Triangles is hardware accelerated by NVIDIA's RT cores and therefore more than twice as fast. However in the following benchmark examples the ray number is relative to the number of surface elements. In general the Triangle mesh uses around twice as many elements as the other methods.
 

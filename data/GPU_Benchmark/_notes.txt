@@ -5,6 +5,15 @@ Fixed number of rays = 140.000.000
 Postprocess neighbor averaging with 1st order neighbors
 MAKE_GEO Hole from BenchmarkGeometry.hpp
 
+3D: 47003 disks * 3000 rays/point = 140.000.000 rays
+2D: 601 disks * 6000 rays/point = 3.6000.000 rays
+
+
+- Triangles:
+  - trig3D_prd: For compatibility with Disks and Lines the Triangles pipeline unnecessarily reads and writes
+    2 elements of PerRayData, which slows it down by ~2%.
+  - Nr. of total elements in PerRayData has no impact.
+
 - Disks:
   - 3 Methods of neighbor detection:
     - (default): find all disks that are close to the closest hit given a max search distance (tThreshold ~gridDelta).

@@ -10,7 +10,5 @@
 holeEtching:
 - With deterministic parameters (120.981 rays, same RNG for ray generation, specular reflection, no pulls from distribution but just taking the mean value)
 simulation results match up to floating point precision (s. ..._sameRNG.vtp)
-- With random rays (everything else deterministic) results vary for both GPU and CPU in the same magnitude (s. ..._rndRays.vtp)
 - With everything random the results match perfectly with slight variations based on RNG of course
-- timestepsX.txt show the time steps for the default configuration (all random, using config.txt)
-- GPU version uses CPU equivalent detection
+- disks3D_hole_smallerDelta uses 0.02 instead of 0.03 as grid delta. Higher etch rate probably because of less shadowing. (80s, 234 iterations)

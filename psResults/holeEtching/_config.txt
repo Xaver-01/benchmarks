@@ -4,6 +4,7 @@
 # Domain
 lengthUnit=um
 gridDelta=0.03  # um
+# gridDelta=0.02  # um  smaller Delta
 xExtent=1.0     # um
 yExtent=1.0     # um
 

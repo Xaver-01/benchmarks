@@ -1,34 +1,36 @@
-Total simulation time: 4.6103s
-Trace Calls:
+Simulation results are off
+
+Total simulation time: 4.64396s
+Iterations:
   Etch: 324
   Punch through: 70
   Deposit: 81
   Total: 475
 
-Total simulation time: 4.59936s
-Trace Calls:
-  Etch: 322
-  Punch through: 70
-  Deposit: 82
-  Total: 474
-
-Total simulation time: 4.70703s
-Trace Calls:
+Total simulation time: 4.63136s
+Iterations:
   Etch: 323
   Punch through: 70
   Deposit: 81
   Total: 474
 
-Total simulation time: 4.54413s
-Trace Calls:
-  Etch: 318
+Total simulation time: 4.56172s
+Iterations:
+  Etch: 321
   Punch through: 70
   Deposit: 81
-  Total: 469
+  Total: 472
 
-Total simulation time: 4.62843s
-Trace Calls:
+Total simulation time: 4.64348s
+Iterations:
   Etch: 325
   Punch through: 70
   Deposit: 81
   Total: 476
+
+Total simulation time: 4.60888s
+Iterations:
+  Etch: 322
+  Punch through: 70
+  Deposit: 81
+  Total: 473

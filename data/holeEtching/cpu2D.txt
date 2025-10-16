@@ -1,13 +1,14 @@
-Process SF6O2Etching took: 35.159531 s 
-    Surface advection total time: 0.293587 s
-    Percent of total time: 0.835014
-    Flux calculation total time: 34.498701 s
-    Percent of total time: 98.120481
-Number of trace calls: 282
+Process took 11.9185 s
+Total iterations: 159
 
-Process SF6O2Etching took: 35.625722 s 
-    Surface advection total time: 0.293634 s
-    Percent of total time: 0.824218
-    Flux calculation total time: 34.951831 s
-    Percent of total time: 98.108414
-Number of trace calls: 284
+Process took 11.9303 s
+Total iterations: 159
+
+Process took 11.934 s
+Total iterations: 158
+
+Process took 12.1238 s
+Total iterations: 159
+
+Process took 12.239 s
+Total iterations: 158
